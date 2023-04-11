@@ -60,6 +60,7 @@
     background-color: #f3ffad;
     border-radius: 2%;
     overflow: hidden;
+    margin-bottom: 5px;
   }
   
   .project-tile h2 {
@@ -72,8 +73,10 @@
   .project-tile iframe {
     position: relative;
     padding: 5px;
-    overflow: hidden;
+    overflow: inherit;
     top: 15px;
+    bottom: 15px;
+    margin-bottom: 5px;
   }
   #nevies {
     position: relative;
@@ -82,7 +85,8 @@
   }
   #swan {
     position: relative;
-    margin-bottom: 15px;
+    aspect-ratio: 1;
+    overflow-clip-margin: -2px;
   }
   .project-tile a:hover {
     color: #ff8daa;
