@@ -86,7 +86,7 @@
   #swan {
     position: relative;
     aspect-ratio: 1;
-    padding-bottom: 40vh;
+    padding-bottom: 3vh;
   }
   .project-tile a:hover {
     color: #ff8daa;
