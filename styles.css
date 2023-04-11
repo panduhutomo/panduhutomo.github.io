@@ -1,145 +1,104 @@
-body {
-  background-color: #fafafa;
-  color: #333;
-  font-family: Arial, sans-serif;
-}
-
-h1, h2, h3, p {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-header {
-  background-color: #e6f2ff;
-  padding: 10px;
-}
-.header {
-  font-weight: bold;
-}
-
-nav {
-  background-color: #a3ac9d;
-  padding: 10px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.nav-link {
-  color: #333;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.main-section {
-  margin-bottom: 20px;
-}
-
-.header {
-  background-color: #f0f8ff;
-  padding: 10px;
-}
-
-pre {
-  background-color: #f8f8f8;
-  padding: 10px;
-}
-
-ul[name="Pandawa_Lima"] {
-  margin-top: 10px;
-  list-style-type: square;
-}
-
-/* Media queries */
-@media screen and (max-width: 767px) {
-  /* Styles for screens smaller than 768px */
-  .container {
-    padding: 10px;
+* {
+    font-family: Belleza, sans-serif;
   }
   
-  nav {
-    display: block;
-  }
-  
-  nav li {
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  /* Styles for screens larger than or equal to 768px */
-  body {
-    background-color: #fafafa;
-    color: #333;
-    font-family: Arial, sans-serif;
-  }
-
-  h1, h2, h3, p {
+  body, h1, h2, p {
     margin: 0;
     padding: 0;
   }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  
+  #welcome-section {
+    height: 100vh;
+    background-image: url('https://lastfm.freetls.fastly.net/i/u/770x0/b330594acbfce777df2b084948b1e4c7.jpg#b330594acbfce777df2b084948b1e4c7');
+    background-size: cover;
+    background-position: center;
+    position: relative;
   }
-
-  header {
-    background-color: #e6f2ff;
+  
+  #welcome-section h1 {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
     padding: 10px;
+    color: #fff;
   }
-
-  nav {
-    background-color: #fff;
-    padding: 10px;
-  }
-
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  nav li {
-    display: inline-block;
+  
+  #navbar a {
+    color: #fff;
     margin-right: 10px;
-  }
-
-  .nav-link {
-    color: #333;
     text-decoration: none;
   }
-
-  .main-section {
+  #navbar a:hover {
+    color: #fdaeae;
+  }
+  #profile-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: auto;
+  }
+  
+  #projects {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .project-tile {
+    padding: 20px;
     margin-bottom: 20px;
+    background-color: #f3ffad;
+    border-radius: 2%;
+    overflow: hidden;
   }
-
-  .header {
-    background-color: #f0f8ff;
-    padding: 10px;
+  
+  .project-tile h2 {
+    margin-bottom: 2px;
   }
-
-  pre {
-    background-color: #f8f8f8;
-    padding: 10px;
+  
+  .project-tile p {
+    margin-bottom: 2px;
   }
-
-  ul[name="Pandawa_Lima"] {
-    margin-top: 10px;
-    list-style-type: square;
+  .project-tile iframe {
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+    top: 15px;
   }
-}
+  #nevies {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  #swan {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .project-tile a:hover {
+    color: #ff8daa;
+  }
+  
+  .project-tile * {
+    padding: 5px;
+    right: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    #navbar {
+      padding: 5px;
+   }
+  
+    .project-tile {
+       padding: 5px;
+    }
+  }
