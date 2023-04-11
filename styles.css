@@ -86,7 +86,7 @@
   #swan {
     position: relative;
     aspect-ratio: 1;
-    overflow-clip-margin: -2px;
+    padding-bottom: 40vh;
   }
   .project-tile a:hover {
     color: #ff8daa;
