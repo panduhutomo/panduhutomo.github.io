@@ -1,0 +1,108 @@
+* {
+    font-family: Belleza, sans-serif;
+  }
+  
+  body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #welcome-section {
+    height: 100vh;
+    background-image: url('https://lastfm.freetls.fastly.net/i/u/770x0/b330594acbfce777df2b084948b1e4c7.jpg#b330594acbfce777df2b084948b1e4c7');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  #welcome-section h1 {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  #navbar a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  #navbar a:hover {
+    color: #fdaeae;
+  }
+  #profile-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: auto;
+  }
+  
+  #projects {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .project-tile {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f3ffad;
+    border-radius: 2%;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+  
+  .project-tile h2 {
+    margin-bottom: 2px;
+  }
+  
+  .project-tile p {
+    margin-bottom: 2px;
+  }
+  .project-tile iframe {
+    position: relative;
+    padding: 5px;
+    overflow: inherit;
+    top: 15px;
+    bottom: 15px;
+    margin-bottom: 5px;
+  }
+  #nevies {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  #swan {
+    position: relative;
+    aspect-ratio: 1;
+    padding-bottom: 3vh;
+  }
+  .project-tile a:hover {
+    color: #ff8daa;
+  }
+  
+  .project-tile * {
+    padding: 5px;
+    right: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    #navbar {
+      padding: 5px;
+   }
+  
+    .project-tile {
+       padding: 5px;
+    }
+  }

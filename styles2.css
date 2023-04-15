@@ -1,0 +1,23 @@
+:root {
+    --navy: #453C67;
+    --sea: #6D67E4;
+    --sky: #46C2CB;
+    --sand: #F2F7A1;
+    font-family: Belleza, sans-serif;
+}
+
+#canvas {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(circle at center, var(--sand) 5%, var(--sky) 20%, var(--sea) 40%, var(--navy) 100%);
+    background-size: calc(100vw + 100vh);
+}
+
+@media (min-width: 768px) {
+    #canvas {
+       width: 10% 100vw;
+       height: 10% 100vh;
+    }
+}
