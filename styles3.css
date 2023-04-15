@@ -80,3 +80,25 @@ body {
 #tribute-link:hover {
     text-decoration: underline;
 }
+
+.loading {
+    display: flex;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.footer {
+    position: fixed;
+    padding: 2px;
+    height: 3vh;
+    margin-top: 2px;;
+    bottom: 0px;
+    left: auto;
+    right: auto;
+    background-color: black;
+    display: inline;
+    overflow-inline:scroll;
+    text-align: center;
+    width: inherit;
+    overflow-wrap:unset
+}

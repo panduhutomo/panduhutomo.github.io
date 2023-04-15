@@ -41,10 +41,16 @@ body {
         opacity: 1;
         transition: opacity 0.3s;
         z-index: 1;
+        text-decoration: none;
+}
+
+.headline a {
+    text-decoration: none;
+    color: inherit;
 }
     
 .box:hover .headline {
-        opacity: 0;
+    opacity: 0;
  }
 
     
