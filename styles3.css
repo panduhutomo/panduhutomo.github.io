@@ -84,6 +84,7 @@ body {
 .loading {
     display: flex;
     max-height: 100vh;
+    max-width: max-content;
     overflow: hidden;
 }
 
