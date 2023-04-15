@@ -50,7 +50,7 @@ body {
 }
     
 .box:hover .headline {
-    opacity: 0;
+    opacity: 0.2;
  }
 
     
@@ -136,6 +136,7 @@ body {
 /* Hide headlines on screens with width less than 768 pixels */
 @media (max-width: 768px) {
     .headline {
-        display: none;
+        display: inline;
+        font-size:larger;
     }
 }
