@@ -44,7 +44,10 @@
   #tribute-info {
     margin-top: 20px;
     font-size: large;
-  }
+    position: relative; /* Add relative positioning */
+    left: 50%; /* Move element 50% to the left */
+    transform: translateX(-50%); /* Center element horizontally */
+}
   
   #tribute-link {
     display: block;
@@ -64,6 +67,12 @@
     body {
       font-size: 18px;
     }
+    #tribute-info {
+        font-size: 20px;
+        max-width: 65%;
+        left: 50%; /* Move element 50% to the left */
+        transform: translateX(-50%);
+      }
   }
   @media screen and (max-width: 768px) {
     #tribute-info {
