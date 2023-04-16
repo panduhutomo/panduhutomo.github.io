@@ -58,7 +58,7 @@ body {
     background-color: var(--navy); 
 }
 #box1 .headline {
-    color: #F2F7A1;
+    color: white;
 }
 #box1:hover {
     background-image: url(https://lastfm.freetls.fastly.net/i/u/770x0/d6cdd40af42c61ec822187ae645fd21b.jpg#d6cdd40af42c61ec822187ae645fd21b); /* Replace with your image file */
@@ -74,6 +74,9 @@ body {
 #box2 {
     background-color: var(--sea);
 }
+#box2 .headline {
+    color: var(--navy);
+}
 #box2:hover {
     background-image: url(https://lastfm.freetls.fastly.net/i/u/770x0/5c079665cffb5d4ee8d27b5009fc5491.jpg#5c079665cffb5d4ee8d27b5009fc5491); /* Replace with your image file */
     background-position: 100% 100vh;
@@ -87,6 +90,9 @@ body {
     
 #box3 {
     background-color: var(--sky);
+}
+#box3 .headline {
+    color: var(--sand);
 }
 #box3:hover {
     background-image: url(https://lastfm.freetls.fastly.net/i/u/770x0/22d722e6739368d70cbfed4ab1f56b92.jpg#22d722e6739368d70cbfed4ab1f56b92); /* Replace with your image file */
@@ -116,6 +122,23 @@ body {
 }
 
 /* Gradual transparency effect on hover */
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+    mix-blend-mode: overlay;
+}
+.box:hover::before {
+    opacity: 1;
+}
+
 .box::after {
     content: "";
     position: absolute;
