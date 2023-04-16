@@ -1,0 +1,73 @@
+:root {
+    --navy: #453C67;
+    --sea: #6D67E4;
+    --sky: #46C2CB;
+    --sand: #F2F7A1;
+    font-family: Belleza, sans-serif;
+    color: black;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Belleza, sans-serif;
+    color: black;
+    background-color: #F2F7A1;
+    text-align: center;
+  }
+  
+  #main {
+    width: 100vw;
+    padding: 0 15px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  #title {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  #img-div {
+    text-align: center;
+  }
+  
+  #image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #tribute-info {
+    margin-top: 20px;
+    font-size: large;
+  }
+  
+  #tribute-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: palevioletred;
+  }
+  
+  #tribute-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (min-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #tribute-info {
+      font-size: 16px;
+    }
+  }
+  
