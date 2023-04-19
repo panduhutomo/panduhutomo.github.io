@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import jsbeautifier
 
-url = "https://www.smtown.com/artist/musician/10017"
+url = "https://www.franshalsmuseum.nl/en/"
 
 # Fetch the webpage content
 response = requests.get(url)

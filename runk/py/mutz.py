@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import sys
 
-url = "https://www.smtown.com/artist/musician/10017"
+url = "https://www.franshalsmuseum.nl/en/"
 res = requests.get(url)
 htmlData = res.content
 parsedData = BeautifulSoup(htmlData, "html.parser")

@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import cssbeautifier
 
-url = 'https://www.smtown.com/resources/css/common.css'
+url = 'https://www.franshalsmuseum.nl/wp-content/themes/franshals/build/app.min.css?t=ea8a244ca539a9be02846c5d8322feaca13fa077'
 
 # Fetch the CSS file content from the URL
 response = requests.get(url)

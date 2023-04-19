@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import sys
 from urllib.parse import urljoin
 
-url = "https://www.smtown.com/artist/musician/10017"
+url = "https://www.franshalsmuseum.nl/en/"
 res = requests.get(url)
 htmlData = res.content
 parsedData = BeautifulSoup(htmlData, "lxml")  # or "html5lib" as the parser
