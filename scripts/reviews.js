@@ -67,8 +67,8 @@ const reviews = [
     const item = reviews[currentItem];
     img.src = item.img;
     author.textContent = item.name;
-    job.textContent = item.job;
-    info.textContent = item.text;
+    job.innerHTML = `<a href="${item.link}" target="_blank">${item.job}</a>`;
+    info.innerHTML = item.text.replace(/(Wasted Hearts|Mojang Supremacy|Madeleine of Rogues|Pandu Hutomo|Insane|South City)/g, '<b>$1</b>').replace(/(classic|American Pie|epic|genuine)/g, '<i>$1</i>');
   });
   
   // show person based on item

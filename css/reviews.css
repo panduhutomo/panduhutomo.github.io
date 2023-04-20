@@ -191,6 +191,9 @@ main {
   border-radius: 50%;
   position: relative;
 }
+#person-img:hover {
+  filter: saturate(3);
+}
 .img-container::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -257,7 +260,10 @@ main {
 .return-link {
   text-decoration: none;
   color:#46C2CB;
+  font-family: Belleza;
+  font-size: 1.2em;
 }
 .return-link:hover {
   text-decoration: underline;
+  color: deeppink;
 }
