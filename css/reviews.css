@@ -145,6 +145,7 @@ main {
 }
 .title {
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: 4rem;
   color: var(--clr-white);
 }
@@ -228,6 +229,9 @@ main {
   color: var(--clr-primary-5);
   font-size: 1rem;
 }
+#job:hover {
+  text-decoration: underline;
+}
 #info {
   margin-bottom: 0.75rem;
   color: var(--clr-black);
@@ -245,4 +249,15 @@ main {
 .prev-btn:hover,
 .next-btn:hover {
   color: var(--clr-primary-5);
+}
+
+.return {
+  margin-bottom: 1.3em;
+}
+.return-link {
+  text-decoration: none;
+  color:#46C2CB;
+}
+.return-link:hover {
+  text-decoration: underline;
 }
