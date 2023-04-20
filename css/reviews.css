@@ -50,7 +50,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-primary-1);
+  background: black;
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -159,6 +159,10 @@ main {
   width: 80vw;
   max-width: var(--fixed-width);
 }
+.err {
+  height: 2em;
+  width:auto
+}
 .review {
   background: var(--clr-white);
   padding: 1.5rem 2rem;
@@ -176,7 +180,7 @@ main {
   height: 150px;
   border-radius: 50%;
   margin: 0 auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 #person-img {
   width: 100%;
@@ -214,13 +218,15 @@ main {
 }
 #author {
   margin-bottom: 0.25rem;
-  font-size: large;
+  font-size: 1rem
 }
 #job {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
+  font-style: oblique;
+  font-weight: bold;
   color: var(--clr-primary-5);
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 #info {
   margin-bottom: 0.75rem;

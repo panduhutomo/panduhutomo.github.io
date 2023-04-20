@@ -13,8 +13,9 @@
   }
   
   body {
-    font-family: Belleza, sans-serif;
-    color: white;
+    font-family: "Belleza", sans-serif;
+    font-weight: lighter;
+    color:aliceblue;
     background-color: black;
     text-align: center;
   }
@@ -27,7 +28,7 @@
   }
   
   #title {
-    font-size: 2em;
+    font-size: 4em;
     margin-top: 20px;
     margin-bottom: 30px;
   }
@@ -39,6 +40,9 @@
   #image {
     max-width: 100%;
     height: auto;
+  }
+  #image:hover {
+    filter: contrast(2);
   }
   
   #tribute-info {
@@ -57,10 +61,16 @@
     font-weight: bold;
     text-decoration: none;
     color: palevioletred;
+    font-size: 1.5em;
   }
   
   #tribute-link:hover {
-    text-decoration: underline;
+    font-size: 2em;
+    transition-delay: 2ms;
+  }
+
+  #tribute-link::after {
+    opacity: 90%;
   }
   
   @media screen and (min-width: 1025px) {
@@ -79,4 +89,16 @@
       font-size: 16px;
     }
   }
-  
+.player {
+  margin-bottom: 1.4em;;
+}
+.return {
+  margin-bottom: 1.3em;
+}
+.return-link {
+  text-decoration: none;
+  color:#46C2CB;
+}
+.return-link:hover {
+  text-decoration: underline;
+}
